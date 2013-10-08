@@ -1,0 +1,14 @@
+<h1>Article View</h1>
+
+<%= @post.title  %>
+
+<%= @post.body  %>
+
+<h2>Comments</h2>
+<%= render @post.comments %>
+
+<h2>Add a Comment</h2>
+<%= render "comments/form" %>
+
+<%= link_to 'edit', edit_post_path  %>
+<%= link_to 'home', posts_path %>

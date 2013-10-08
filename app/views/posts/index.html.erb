@@ -1,0 +1,10 @@
+<h1>All Posts</h1>
+
+<% @posts.each do |post| %>
+  <%= link_to "#{post.title}", post_path(post) %>
+  <br>
+<% end %>
+
+<%= link_to "Make a post", new_post_path %>
+<%= link_to "Register", new_user_path %> 
+<%= link_to "signin", new_session_path %>
